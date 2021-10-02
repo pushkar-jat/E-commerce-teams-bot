@@ -1,0 +1,34 @@
+{
+    "name":  "",
+    "price": { type: Number, required: true },
+    "productImage": { type: String, required: true },
+    "description": { type: String, required: true },
+    "category": { type: String, required: true },
+    "manufacture_details": {
+        model_number: { type: String, required: true },
+        Origin: { type: String, required: true },
+        release_date: new ISODate()
+    },
+    "shipping_details": {
+        weight: { type: Number, required: true },
+        Unit: { type: string, required: true }
+    },
+    "quantity": { type: Number, required: true }
+},
+{
+    "name":  "mouse",
+    "price":  "150",
+    "productImage":  "",
+    "description":  "wireless mouse with rechargeble battery",
+    "category":  "mobile",
+    "manufacture_details": {
+        "model_number":  "12332vv",
+        "Origin":  "china",
+        "release_date": new ISODate()
+    },
+    "shipping_details": {
+        "weight":  "500",
+        "Unit":  "gram"
+    },
+    "quantity":  "100"
+}

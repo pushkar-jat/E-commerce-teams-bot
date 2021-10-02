@@ -1,0 +1,91 @@
+{
+    "welcomeText": "Hi, I am E-Commerce Bot your shoping Digital Assistant. I can help you with Sales and service related queries. You can type ‘help’ any time to get help or ‘cancel’ to cancel any conversation.",
+   
+    "MainMenuServiceList": [
+        "1. Categories", 
+        "2. Product",
+        "3. About",
+        "4. Login",
+        "5. Signup"
+    ],
+    "categoryServiceList": [
+        "Mobile",
+        "Laptop",
+        "Desktop",
+        "Tablet",
+        "Accessories",
+        "Refurbished"
+    ],
+    "categoryList": [
+        {
+            "nameToDisplay": "Mobile"
+        },
+        {
+            "nameToDisplay": "Laptop"
+        },
+        {
+            "nameToDisplay": "Desktop"
+        },
+        {
+            "nameToDisplay": "Tablet"
+        },
+        {
+            "nameToDisplay": "accessories"
+        },
+        {
+            "nameToDisplay": "Refurbished"
+        }
+        
+    ],
+    "companyList": [
+        {
+            "nameToDisplay": "Samsung"
+        },
+        {
+            "nameToDisplay": "Nokia"
+        },
+        {
+            "nameToDisplay": "Dell"
+        },
+        {
+            "nameToDisplay": "Apple"
+        },
+        {
+            "nameToDisplay": "Amazon"
+        },
+        {
+            "nameToDisplay": "Qualcom"
+        }
+        
+    ],
+    "personList": [
+        {
+            "nameToDisplay": "1. Categories"
+        } ,
+        {
+            "nameToDisplay": "2. Product"
+        },
+        {
+
+            
+            "nameToDisplay": "3. About"
+        },
+        {
+            "nameToDisplay": "4. Login" 
+        },
+        {
+            "nameToDisplay": "5. Signup"
+        }
+    ],
+    "userDetails":{
+        "data":""
+        },
+    "MainMenuServiceListAfterLogin": [
+        "1. Categories", 
+        "2. Product", 
+        "3. Cart Details",
+        "4. Order Details",
+        "5. Profile"
+    ]
+
+}

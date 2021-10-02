@@ -1,0 +1,260 @@
+
+product 
+
+post :-
+{
+    "name":  "mouse",
+    "price":  "150",
+    "productImage":  "",
+    "description":  "wireless mouse with rechargeble battery",
+    "category":  "mobile",
+    "manufacture_details": {
+        "model_number":  "12332vv",
+        "Origin":  "china",
+        "release_date": new ISODate()
+    },
+    "shipping_details": {
+        "weight":  "500",
+        "Unit":  "gram"
+    },
+    "quantity":  "100"
+}
+
+get :- 
+{
+    "count": 6,
+    "products": [
+        {
+            "name": "mobile",
+            "price": 12345,
+            "_id": "606ecd680a039e4c4ca47149",
+            "manufacture_details": {},
+            "shipping_details": {},
+            "request": {
+                "type": "GET",
+                "url": "http://localhost:3000/products/606ecd680a039e4c4ca47149"
+            }
+        },
+        {
+            "name": "mobile",
+            "price": 12345,
+            "_id": "606ed48c9a76682448f9389b",
+            "manufacture_details": {},
+            "shipping_details": {},
+            "request": {
+                "type": "GET",
+                "url": "http://localhost:3000/products/606ed48c9a76682448f9389b"
+            }
+        },
+        {
+            "name": "mobile1",
+            "price": 12345,
+            "_id": "606ed999433f001d8cba0c81",
+            "manufacture_details": {},
+            "shipping_details": {},
+            "request": {
+                "type": "GET",
+                "url": "http://localhost:3000/products/606ed999433f001d8cba0c81"
+            }
+        },
+        {
+            "name": "mobile10",
+            "price": 12345,
+            "_id": "606ed9a0433f001d8cba0c82",
+            "manufacture_details": {},
+            "shipping_details": {},
+            "request": {
+                "type": "GET",
+                "url": "http://localhost:3000/products/606ed9a0433f001d8cba0c82"
+            }
+        },
+        {
+            "name": "mouse",
+            "price": 150,
+            "productImage": "fdkdkfld",
+            "_id": "606ee5682aee7036dcd3a641",
+            "manufacture_details": {},
+            "shipping_details": {},
+            "request": {
+                "type": "GET",
+                "url": "http://localhost:3000/products/606ee5682aee7036dcd3a641"
+            }
+        },
+        {
+            "name": "mouse-keyboard",
+            "price": 150,
+            "productImage": "fdkdkfld",
+            "_id": "606ee65dcc27cb46f8aa423b",
+            "manufacture_details": {},
+            "shipping_details": {},
+            "request": {
+                "type": "GET",
+                "url": "http://localhost:3000/products/606ee65dcc27cb46f8aa423b"
+            }
+        }
+    ]
+}
+
+
+
+
+get/id:-
+id :  606ee908410bd13890285b93
+{
+    "manufacture_details": {
+        "model_number": "12332cxcvv",
+        "Origin": "china",
+        "release_date": "11-5-2020"
+    },
+    "shipping_details": {
+        "weight": 500,
+        "Unit": "gram"
+    },
+    "_id": "606ee908410bd13890285b93",
+    "name": "cpu",
+    "price": 15045,
+    "productImage": "fdkdkfld",
+    "description": "wireless mouse with rechargeble battery",
+    "category": "accessories",
+    "quantity": 100,
+    "__v": 0
+}
+
+patch :-(doubt)
+patch/id
+pass value - array
+[{
+    "propname":"name",
+    "value":  "ryzen-7"
+},
+{
+    "propname":"price",
+    "value":  "99999"
+}
+]
+
+response:
+{
+    "message": "Product updated",
+    "request": {
+        "type": "GET",
+        "url": "http://localhost:3000/products/606ee908410bd13890285b93"
+    }
+}
+
+
+
+delete :-
+delete/id
+-> deleted from database
+
+
+orders
+post:-
+
+{
+    "productId":"606ee908410bd13890285b93",
+    "quantity":"2"
+}
+
+response :-
+{
+    "message": "Order stored",
+    "createdOrder": {
+        "_id": "606ef144e6aa093364ac530d",
+        "product": "606ee908410bd13890285b93",
+        "quantity": 2
+    },
+    "request": {
+        "type": "GET",
+        "url": "http://localhost:3000/orders/606ef144e6aa093364ac530d"
+    }
+}
+
+get :-
+{
+    "count": 1,
+    "orders": [
+        {
+            "_id": "606ef144e6aa093364ac530d",
+            "product": {
+                "_id": "606ee908410bd13890285b93",
+                "name": "cpu"
+            },
+            "quantity": 2,
+            "request": {
+                "type": "GET",
+                "url": "http://localhost:3000/orders/606ef144e6aa093364ac530d"
+            }
+        }
+    ]
+}
+
+get/id
+id :
+{
+    "order": {
+        "quantity": 2,
+        "_id": "606ef144e6aa093364ac530d",
+        "product": {
+            "manufacture_details": {
+                "model_number": "12332cxcvv",
+                "Origin": "china",
+                "release_date": "11-5-2020"
+            },
+            "shipping_details": {
+                "weight": 500,
+                "Unit": "gram"
+            },
+            "_id": "606ee908410bd13890285b93",
+            "name": "cpu",
+            "price": 15045,
+            "productImage": "fdkdkfld",
+            "description": "wireless mouse with rechargeble battery",
+            "category": "accessories",
+            "quantity": 100,
+            "__v": 0
+        },
+        "__v": 0
+    },
+    "request": {
+        "type": "GET",
+        "url": "http://localhost:3000/orders"
+    }
+}
+
+
+delete :-
+delete/id
+
+response:-
+{
+    "message": "Order deleted",
+    "request": {
+        "type": "POST",
+        "url": "http://localhost:3000/orders",
+        "body": {
+            "productId": "ID",
+            "quantity": "Number"
+        }
+    }
+}
+
+
+user:-
+login :-
+{
+    "email":"pc@gmail.com",
+    "password":"12345"
+}
+
+
+Signup:-
+{
+    "email":"pc@gmail.com",
+    "password":"12345",
+    "firstName":"pc",
+    "lastName":"cv",
+    "userAddress":"sitapura"
+
+}
