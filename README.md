@@ -28,7 +28,7 @@ In order to generate a order we select product against common data like:
 Once we have update database the product list shown in product pages and also we can update in database for add new product or change the quantity or price.  
 
 
-If you want to know more about the project then checkout [E-commerce wiki](https://www.notion.so/E-Commerce-Bot-cefafcf5a319429c8d06fe42d56eff05) or have an [overview of E-commerce](hhttps://www.notion.so/E-Commerce-Bot-cefafcf5a319429c8d06fe42d56eff05). 
+If you want to know more about the project then checkout [E-commerce wiki](https://knowing-hound-79c.notion.site/E-Commerce-Bot-cefafcf5a319429c8d06fe42d56eff05) or have an [overview of E-commerce](hhttps://knowing-hound-79c.notion.site/E-Commerce-Bot-cefafcf5a319429c8d06fe42d56eff05). 
 
 **We don't encourage any bad use of this project and in no case, we code authors are liable to any damage or illegal action.**
 </br>
